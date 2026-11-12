@@ -1,0 +1,174 @@
+
+[
+    {
+        "question": "How can I track my order?",
+        "alternatives": [
+            "Where is my order?",
+            "Track my package",
+            "How do I check my order status?",
+            "I want to know my order status",
+            "Has my order been shipped?",
+            "Where is my package?",
+            "Can you help me track my purchase?"
+        ],
+        "answer": "You can check your order status using the tracking details provided in your order confirmation or shipping notification. If you have a tracking number, enter it on the delivery service's tracking page. This demo does not connect to a live order database.",
+        "category": "Orders & Tracking"
+    },
+    {
+        "question": "How can I cancel my order?",
+        "alternatives": [
+            "I want to cancel my purchase",
+            "Can I cancel my order?",
+            "Cancel my recent order",
+            "I placed an order by mistake",
+            "How do I stop my order?"
+        ],
+        "answer": "If your order has not been shipped, you may be able to request cancellation through the store's order management section. Once an order is dispatched, cancellation may not be possible. Please check the seller's cancellation policy.",
+        "category": "Orders & Tracking"
+    },
+    {
+        "question": "What payment methods do you accept?",
+        "alternatives": [
+            "Which payment options are available?",
+            "Can I pay using UPI?",
+            "Do you accept credit cards?",
+            "Can I use a debit card?",
+            "How can I pay for my order?",
+            "What payment options do you support?"
+        ],
+        "answer": "Available payment methods depend on the store's checkout options. Common methods include UPI, debit cards, credit cards, net banking, and supported digital wallets. Check the checkout page to see which methods are available.",
+        "category": "Payments"
+    },
+    {
+        "question": "Why did my payment fail?",
+        "alternatives": [
+            "My payment was unsuccessful",
+            "Payment is not working",
+            "Transaction failed",
+            "I cannot complete my payment",
+            "Money was deducted but payment failed",
+            "Why is my transaction unsuccessful?"
+        ],
+        "answer": "A payment may fail because of insufficient funds, incorrect payment details, bank restrictions, or temporary network issues. If money was deducted, check your bank transaction status before trying again. Contact your bank or the store's official support if the issue continues.",
+        "category": "Payments"
+    },
+    {
+        "question": "How long does shipping take?",
+        "alternatives": [
+            "When will my order arrive?",
+            "How many days does delivery take?",
+            "What is the delivery time?",
+            "When can I expect my package?",
+            "How long will shipping take?",
+            "What is the estimated delivery time?"
+        ],
+        "answer": "Delivery time depends on your location, shipping method, and seller processing time. Check the estimated delivery date in your order confirmation or tracking information for the latest details.",
+        "category": "Shipping"
+    },
+    {
+        "question": "Can I change my delivery address?",
+        "alternatives": [
+            "I entered the wrong address",
+            "How can I update my shipping address?",
+            "Can I modify my delivery location?",
+            "Change my order address",
+            "I want to update my address"
+        ],
+        "answer": "If your order has not been shipped, contact the store or use its order management options to request an address change. After dispatch, changing the delivery address may be difficult.",
+        "category": "Shipping"
+    },
+    {
+        "question": "What is your return and refund policy?",
+        "alternatives": [
+            "How can I return a product?",
+            "I want to return my order",
+            "Can I get a refund?",
+            "How do I request a return?",
+            "What is the refund process?",
+            "How can I get my money back?",
+            "Can I exchange a product?"
+        ],
+        "answer": "Return and refund eligibility depends on the store's policy, the product condition, and the return period. Check the store's return policy for eligibility and instructions before submitting a return request.",
+        "category": "Returns & Refunds"
+    },
+    {
+        "question": "How long does a refund take?",
+        "alternatives": [
+            "When will I receive my refund?",
+            "How many days for a refund?",
+            "My refund is delayed",
+            "Where is my refund?",
+            "How long will it take to get my money back?",
+            "Refund processing time"
+        ],
+        "answer": "Refund processing time depends on the store, payment provider, and bank. Once a refund is approved, it may take several business days to appear in your account. Check your refund confirmation for the estimated timeline.",
+        "category": "Returns & Refunds"
+    },
+    {
+        "question": "How can I create an account?",
+        "alternatives": [
+            "I want to register",
+            "How do I sign up?",
+            "Create a new account",
+            "How can I join?",
+            "I need to create a customer account"
+        ],
+        "answer": "You can usually create an account by selecting the Sign Up or Register option on the store's website. Enter the requested details and follow the verification instructions.",
+        "category": "Account"
+    },
+    {
+        "question": "I forgot my password. How can I reset it?",
+        "alternatives": [
+            "I cannot log in",
+            "Forgot password",
+            "Reset my account password",
+            "I lost my password",
+            "How do I recover my account?",
+            "Password reset help"
+        ],
+        "answer": "Select the Forgot Password option on the login page. Enter your registered email address and follow the password reset instructions sent to you.",
+        "category": "Account"
+    },
+    {
+        "question": "How can I get help with my issue?",
+        "alternatives": [
+            "I need more help",
+            "I need assistance",
+            "Can someone help me?",
+            "I have another question",
+            "I need customer support",
+            "I have a problem",
+            "I need help with something",
+            "Can you assist me?",
+            "I want additional support",
+            "I need help with my problem"
+        ],
+        "answer": "Of course! I'm here to help. You can describe your issue in the chat box, or choose one of the support categories for help with orders, payments, shipping, returns, and account questions. This is an automated demo assistant and is not connected to a live support agent.",
+        "category": "General Support"
+    },
+    {
+        "question": "How can I contact customer support?",
+        "alternatives": [
+            "I want to speak to customer service",
+            "Talk to a support agent",
+            "How do I reach support?",
+            "I want to speak to someone",
+            "Where can I get assistance?",
+            "Customer service contact details"
+        ],
+        "answer": "For additional assistance, please use the official customer support contact options provided by the store or service you purchased from. This demo chatbot does not have a connected live support agent.",
+        "category": "General Support"
+    },
+    {
+        "question": "Hello",
+        "alternatives": [
+            "Hi",
+            "Hey",
+            "Good morning",
+            "Good afternoon",
+            "Good evening"
+        ],
+        "answer": "Hello! Welcome to SupportMate. I'm your AI customer support assistant. You can ask me about orders, payments, shipping, returns, and account-related questions. How can I help you?",
+        "category": "General Support"
+    }
+]

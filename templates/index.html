@@ -1,0 +1,517 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#17152f">
+
+    <title>SupportMate | Intelligent Customer Support</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+
+<div class="app-shell">
+
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+
+        <a href="#home" class="brand">
+            <div class="brand-icon">
+                <i class="fa-solid fa-sparkles"></i>
+            </div>
+            <span>supportmate<span class="brand-period">.</span></span>
+        </a>
+
+        <div class="sidebar-section">
+            <p class="sidebar-label">WORKSPACE</p>
+
+            <nav class="sidebar-nav">
+                <a href="#home" class="nav-link active">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Dashboard</span>
+                </a>
+
+                <a href="#chat-section" class="nav-link">
+                    <i class="fa-solid fa-message"></i>
+                    <span>AI Assistant</span>
+                </a>
+
+                <a href="#suggestion-section" class="nav-link">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <span>Popular Questions</span>
+                </a>
+
+                <a href="#support-categories" class="nav-link">
+                    <i class="fa-solid fa-layer-group"></i>
+                    <span>Support Categories</span>
+                </a>
+            </nav>
+        </div>
+
+        <div class="sidebar-bottom">
+
+            <div class="sidebar-promo">
+                <div class="promo-symbol">
+                    <i class="fa-solid fa-wand-magic-sparkles"></i>
+                </div>
+
+                <span class="promo-tag">SMART SUPPORT</span>
+
+                <h3>Support made simple.</h3>
+
+                <p>
+                    Get instant answers with your intelligent
+                    customer support assistant.
+                </p>
+
+                <a href="#chat-section">
+                    Start a conversation
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+
+            <div class="profile">
+                <div class="profile-avatar">SM</div>
+
+                <div class="profile-info">
+                    <strong>SupportMate</strong>
+                    <span>AI Workspace</span>
+                </div>
+
+                <i class="fa-solid fa-ellipsis"></i>
+            </div>
+
+        </div>
+    </aside>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content" id="home">
+
+        <!-- TOP BAR -->
+        <header class="topbar">
+
+            <div class="breadcrumb">
+                <span>Workspace</span>
+                <i class="fa-solid fa-chevron-right"></i>
+                <strong>Dashboard</strong>
+            </div>
+
+            <div class="topbar-actions">
+
+                <div class="online-status">
+                    <span class="status-dot"></span>
+                    Assistant online
+                </div>
+
+                <div class="topbar-avatar">SM</div>
+
+            </div>
+        </header>
+
+
+        <!-- DASHBOARD -->
+        <div class="dashboard-grid">
+
+            <!-- LEFT COLUMN -->
+            <section class="chat-section" id="chat-section">
+
+                <!-- HERO -->
+                <div class="hero-section">
+
+                    <div class="hero-badge">
+                        <i class="fa-solid fa-sparkles"></i>
+                        YOUR INTELLIGENT SUPPORT ASSISTANT
+                    </div>
+
+                    <h1>
+                        How can we help
+                        <span>you today?</span>
+                    </h1>
+
+                    <p>
+                        Welcome to SupportMate. Get quick answers
+                        about your orders, payments, shipping,
+                        and more — all in one place.
+                    </p>
+
+                    <div class="hero-stats">
+                        <div>
+                            <i class="fa-solid fa-bolt"></i>
+                            Instant answers
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-shield-halved"></i>
+                            Easy assistance
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-clock"></i>
+                            Always available
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <!-- CHAT CARD -->
+                <div class="chat-card">
+
+                    <!-- CHAT HEADER -->
+                    <div class="chat-card-header">
+
+                        <div class="chat-identity">
+
+                            <div class="chat-avatar">
+                                <i class="fa-solid fa-sparkles"></i>
+                                <span></span>
+                            </div>
+
+                            <div>
+                                <h3>SupportMate AI</h3>
+                                <p>
+                                    <span class="status-dot"></span>
+                                    Ready to assist you
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="chat-header-actions">
+
+                            <span class="secure-label">
+                                <i class="fa-solid fa-lock"></i>
+                                Secure session
+                            </span>
+
+                            <button type="button"
+                                    class="clear-button"
+                                    id="clear-chat">
+                                <i class="fa-solid fa-rotate-left"></i>
+                                <span>Clear</span>
+                            </button>
+
+                        </div>
+                    </div>
+
+
+                    <!-- CHAT CONTENT -->
+                    <div class="chat-content" id="chat-content">
+
+                        <div class="chat-date">
+                            <span>NEW CONVERSATION</span>
+                        </div>
+
+                        <div class="message-row bot-row">
+
+                            <div class="avatar bot-avatar">
+                                <i class="fa-solid fa-sparkles"></i>
+                            </div>
+
+                            <div class="message-content">
+
+                                <div class="message-name">
+                                    SupportMate AI
+                                    <small>Just now</small>
+                                </div>
+
+                                <div class="message-bubble bot-bubble">
+                                    <p>Hello! Welcome to SupportMate. 👋</p>
+                                    <p>
+                                        I'm here to make things easier.
+                                        Ask me about orders, payments,
+                                        delivery, returns, or account help.
+                                        What can I help you with?
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+
+
+                        <!-- FAQ SUGGESTIONS -->
+                        <div class="suggestion-section"
+                             id="suggestion-section">
+
+                            <div class="suggestion-title">
+                                <i class="fa-solid fa-wand-magic-sparkles"></i>
+                                QUICK QUESTIONS
+                            </div>
+
+                            <div class="suggestion-list"
+                                 id="suggestion-list">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- TYPING INDICATOR -->
+                    <div class="typing-indicator hidden"
+                         id="typing-indicator">
+
+                        <div class="avatar bot-avatar">
+                            <i class="fa-solid fa-sparkles"></i>
+                        </div>
+
+                        <div class="typing-content">
+                            <div class="typing-bubble">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                            <small>SupportMate is thinking...</small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- INPUT AREA -->
+                    <div class="chat-input-area">
+
+                        <form id="chat-form" class="chat-form">
+
+                            <div class="input-wrapper">
+
+                                <i class="fa-regular fa-message input-icon"></i>
+
+                                <input
+                                    type="text"
+                                    id="message-input"
+                                    name="message"
+                                    placeholder="Ask us anything..."
+                                    maxlength="500"
+                                    autocomplete="off"
+                                    required
+                                >
+
+                                <button type="submit"
+                                        class="send-button"
+                                        id="send-button"
+                                        aria-label="Send message">
+                                    <i class="fa-solid fa-arrow-up"></i>
+                                </button>
+
+                            </div>
+
+                        </form>
+
+                        <div class="input-footer">
+                            <span>
+                                <i class="fa-solid fa-shield-halved"></i>
+                                Your messages are handled by this demo assistant.
+                            </span>
+                            <span>Powered by SupportMate</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="chat-disclaimer">
+                    <i class="fa-solid fa-circle-info"></i>
+                    SupportMate provides automated FAQ-based responses.
+                    Please verify important information.
+                </div>
+
+            </section>
+
+
+            <!-- RIGHT COLUMN -->
+            <aside class="right-panel">
+
+                <!-- SUPPORT CATEGORY SECTION -->
+                <section class="support-section"
+                         id="support-categories">
+
+                    <div class="panel-heading">
+                        <div>
+                            <span class="panel-eyebrow">EXPLORE</span>
+                            <h2>Support categories</h2>
+                            <p>Choose a topic to get started.</p>
+                        </div>
+
+                        <div class="heading-icon">
+                            <i class="fa-solid fa-layer-group"></i>
+                        </div>
+                    </div>
+
+
+                    <!-- ORDERS -->
+                    <button type="button"
+                            class="support-card orders-card"
+                            data-question="How can I track my order?">
+
+                        <div class="support-icon orders-icon">
+                            <i class="fa-solid fa-box-open"></i>
+                        </div>
+
+                        <div class="support-card-info">
+                            <h3>Orders & Tracking</h3>
+                            <p>Track your orders</p>
+                        </div>
+
+                        <span class="card-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </button>
+
+
+                    <!-- PAYMENTS -->
+                    <button type="button"
+                            class="support-card payments-card"
+                            data-question="What payment methods do you accept?">
+
+                        <div class="support-icon payments-icon">
+                            <i class="fa-solid fa-credit-card"></i>
+                        </div>
+
+                        <div class="support-card-info">
+                            <h3>Payments</h3>
+                            <p>Payment-related queries</p>
+                        </div>
+
+                        <span class="card-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </button>
+
+
+                    <!-- SHIPPING -->
+                    <button type="button"
+                            class="support-card shipping-card"
+                            data-question="How long does shipping take?">
+
+                        <div class="support-icon shipping-icon">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+
+                        <div class="support-card-info">
+                            <h3>Shipping</h3>
+                            <p>Delivery information</p>
+                        </div>
+
+                        <span class="card-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </button>
+
+
+                    <!-- RETURNS -->
+                    <button type="button"
+                            class="support-card returns-card"
+                            data-question="What is your return and refund policy?">
+
+                        <div class="support-icon returns-icon">
+                            <i class="fa-solid fa-arrow-rotate-left"></i>
+                        </div>
+
+                        <div class="support-card-info">
+                            <h3>Returns & Refunds</h3>
+                            <p>Return and refund help</p>
+                        </div>
+
+                        <span class="card-arrow">
+                            <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                        </span>
+                    </button>
+
+                </section>
+
+
+                <!-- AI INFORMATION CARD -->
+                <section class="ai-info-card">
+
+                    <div class="ai-card-decoration"></div>
+
+                    <div class="ai-card-top">
+                        <div class="ai-brain-icon">
+                            <i class="fa-solid fa-brain"></i>
+                        </div>
+                        <span>INTELLIGENT ASSISTANCE</span>
+                    </div>
+
+                    <h2>Support that understands you.</h2>
+
+                    <p>
+                        Ask questions in natural language.
+                        Our NLP-powered FAQ assistant finds
+                        relevant answers from its knowledge base.
+                    </p>
+
+                    <div class="ai-feature-list">
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Smart FAQ matching
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Instant responses
+                        </span>
+                        <span>
+                            <i class="fa-solid fa-circle-check"></i>
+                            Simple conversations
+                        </span>
+                    </div>
+
+                </section>
+
+
+                <!-- CLICKABLE HELP CARD -->
+                <button type="button"
+                        class="help-card"
+                        id="help-card"
+                        data-question="How can I get help with my issue?">
+
+                    <div class="help-icon">
+                        <i class="fa-solid fa-headset"></i>
+                    </div>
+
+                    <div class="help-card-content">
+                        <h3>Need more help?</h3>
+                        <p>Tell our AI assistant what you need.</p>
+                        <span>
+                            Get assistance
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </span>
+                    </div>
+
+                    <i class="fa-solid fa-chevron-right help-arrow"></i>
+
+                </button>
+
+            </aside>
+
+        </div>
+
+
+        <!-- PAGE FOOTER -->
+        <footer class="page-footer">
+            <span>© 2026 SupportMate</span>
+            <span>AI-powered customer support demo</span>
+        </footer>
+
+    </main>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='js/script.js') }}"
+        defer></script>
+
+</body>
+</html>
